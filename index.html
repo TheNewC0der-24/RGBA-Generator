@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="RGBA, rgba, rgba generator, rgba colors">
+    <meta name="description"
+        content="
+    RGBA is a type of CSS color value that allows us to set a color and also its opacity/transparency. Here's an example of using the CSS rgba() notation to specify white with 50% opacity. RGBA is an extension of the RGB color model. The acronym stands for red green blue alpha.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Img/favicon.ico" type="image/x-icon">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <title>RGBA Generator</title>
+</head>
+
+<body>
+
+    <h1><span id="r">R</span>
+        <span id="g">G</span>
+        <span id="b">B</span>
+        <span id="a">A</span>
+        Generator
+    </h1>
+
+    <div class="rgba-container">
+        <div class="sliders">
+            <label id="r">Red</label>
+            <input type="range" min="0" max="255" value="0" oninput="getValue()" id="red">
+            <label id="g">Green</label>
+            <input type="range" min="0" max="255" value="0" oninput="getValue()" id="green">
+            <label id="b">Blue</label>
+            <input type="range" min="0" max="255" value="0" oninput="getValue()" id="blue">
+            <label>Alpha</label>
+            <input type="range" min="0" max="255" step="0.1" value="1" oninput="getValue()" id="alpha">
+        </div>
+
+        <div class="output-box">
+            <div class="output">rgba(0,0,0,1)</div>
+            <div id="copyBtn"><i class="fa fa-clone" aria-hidden="true"></i></div>
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="./JS/script.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c387a6ff36.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

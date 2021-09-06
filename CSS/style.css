@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#r{
+    color: red;
+    font-weight: bolder;
+}
+#g{
+    color: green;
+    font-weight: bolder;
+
+}
+#b{
+    color: blue;
+    font-weight: bolder;
+
+}
+#a{
+    color: gray;
+    font-weight: bolder;
+
+}
+
+.rgba-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px !important;
+    height: 400px !important;
+    background: #fff;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.sliders{
+    width: 280px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sliders input{
+    position: relative;
+    width: 80%;
+    height: 5px;
+    -webkit-appearance: none;
+    background: #e6e6e6;
+    border-radius: 20px;
+    outline: none;
+}
+
+#red::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 50%;
+}
+#green::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: green;
+    border-radius: 50%;
+
+}
+#blue::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: blue;
+    border-radius: 50%;
+
+}
+#alpha::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: grey;
+    border-radius: 50%;
+}
+
+.output-box{
+    width: 275px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+}
+
+.output-box .output{
+    width: 200px;
+    height: 50px;
+    background: #dbdbdb;
+}
+
+.output-box #copyBtn{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dbdbdb;
+    color: #bfbfbf;
+}
